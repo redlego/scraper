@@ -1,5 +1,17 @@
 # -*- coding: utf-8 -*-
 
+import os.path
+import sys
+
+CURRENCY_API_KEY_FILE = 'currency_api_key'
+
+if not os.path.exists(CURRENCY_API_KEY_FILE):
+    print "Create a file called %s and put your exchangerate-api.com API key in it." % CURRENCY_API_KEY_FILE
+    print "To get a (free) API key, go to http://exchangerate-api.com/api-key"
+    sys.exit(1)
+
+CURRENCY_CONVERSION_API_KEY = open(CURRENCY_API_KEY_FILE).read().strip()
+
 STORE_URL_BASE = 'https://store2.adobe.com/cfusion/store/html/index.cfm?store=OLS-%s&event=displayCatalog'
 
 PATHS = [

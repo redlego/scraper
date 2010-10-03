@@ -164,7 +164,7 @@ class CurrencyParser(object):
 class Price(object):
     """Class to represent a price. Uses the xurrency.com API to convert"""
 
-    base_url = 'http://xurrency.com/api/%s/%s/%s'
+    base_url = 'http://www.exchangerate-api.com/%s/%s/%s?k=%s'
 
     def __init__(self, price):
         self.raw_price = price
@@ -198,9 +198,8 @@ class Price(object):
         code = self.currency_code
         if code == settings.BASE_CURRENCY:
             return self.format_currency(amount)
-        response = scraper.urlopen(self.base_url % (code, settings.BASE_CURRENCY, amount))
-        parsed_response = json.loads(response)
-        return self.format_currency(parsed_response['result']['value'])
+        response = scraper.urlopen(self.base_url % (code, settings.BASE_CURRENCY, amount, settings.CURRENCY_CONVERSION_API_KEY))
+        return self.format_currency(response)
 
     def format_currency(self, amount):
         return "%.2f" % float(amount)
