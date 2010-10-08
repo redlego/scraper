@@ -17,7 +17,7 @@ There are two repositories: JSON price data and the scraper.
 
 You can access the raw JSON file at:
 
-[http://github.com/redlego/data/master/prices.json](http://github.com/redlego/data/master/prices.json)
+[http://github.com/redlego/data/raw/master/prices.json](http://github.com/redlego/data/raw/master/prices.json)
 
 ### Scraper ###
 
