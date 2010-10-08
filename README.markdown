@@ -1,4 +1,4 @@
-<img src="http://github.com/redlego/scraper/master/redlego.png" />
+<img src="http://github.com/redlego/scraper/raw/master/redlego.png" />
 
 What is RedLego?
 ----------------
