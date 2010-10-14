@@ -27,6 +27,7 @@ PATHS = [
     'IE',
     'SE',
     'CH',
+    'NO',
 ]
 
 BASE_CURRENCY = 'usd'
