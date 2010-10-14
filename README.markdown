@@ -40,3 +40,7 @@ To install:
 Put your [Exchange Rate API key](http://exchangerate-api.com/api-key) in a file called `currency_api_key`.
 
 Run `python redlego.py`
+
+### Discussion ###
+
+You can find a long-running discussion of Adobe's international pricing here: [Why are UK prices nearly double US prices?](http://getsatisfaction.com/adobe/topics/why_are_uk_prices_nearly_double_us_prices).
